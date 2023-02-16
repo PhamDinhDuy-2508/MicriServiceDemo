@@ -1,0 +1,6 @@
+zookeeper-server-start.bat D:\kafka_2.13-3.4.0\config\zookeeper.properties
+kafka-server-start.bat D:\kafka_2.13-3.4.0\config\server.properties
+
+#Command kafka
+kafka-topics.bat --create --topic phamduy --bootstrap-server localhost:9092
+kafka-topics.bat --list --bootstrap-server localhost:9092

@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.*;
 public class BookRequestController {
     @Autowired
     private CommandGateway commandGateway;
-
-
     @PostMapping("/addBook")
     public ResponseEntity<?> addBook(@RequestBody RequestBookModel requestBookModel) {
 
@@ -27,7 +25,6 @@ public class BookRequestController {
 
         return ResponseEntity.ok("Book Was Added");
     }
-
     @PutMapping("/updateBook")
     public ResponseEntity<?> updateBook(@RequestBody UpdateBookModel requestBookModel) {
 
@@ -37,7 +34,6 @@ public class BookRequestController {
 
         return ResponseEntity.ok("Book Was Uppdated");
     }
-
     @DeleteMapping("/deleteBook")
     public ResponseEntity<?> deleteBook(@RequestBody DeleteBookModel requestBookModel) {
 
@@ -47,5 +43,6 @@ public class BookRequestController {
 
         return ResponseEntity.ok("Book Was Deleted");
     }
+
 
 }

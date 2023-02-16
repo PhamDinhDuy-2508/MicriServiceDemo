@@ -55,7 +55,6 @@ public class EmployeeAggregate {
         this.kin =  event.getKin() ;
         this.isDiscipline =  event.getIsDiscipline();
     }
-
     @EventSourcingHandler
     public void  on (UpdateEmployeeEvent event) {
         this.Id  =  event.getId() ;
